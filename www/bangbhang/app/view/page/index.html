@@ -1,0 +1,139 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="_suhaav.css">
+  <title>Bang Bhang</title>
+  <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+ <script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+ </script>
+</head>
+<body style="font-family: Arial, Sans-serif, sans;">
+<div class="centredContent"> 
+<div id="header">
+   <img src="C:\wamp\www\suhaav\public\images\suhaav-small.jpg">
+ </a>
+<div class="contact">
+ <tr>
+  <td>
+    <p>Email: <a href="mailto:info@suhaav.co.uk" style="text-decoration:none;color:#ffffff">info@suhaav.co.uk</a></br>
+    Tel: 0121 526 3526</br>
+    Fax: 0121 526 3527</p>
+   </td>
+  </tr>
+</div>
+
+<div class="main-menu">
+ <ul>
+  <li class="first">
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Menu
+     <br>
+   </a>
+  </li>
+ <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Ordering and Info
+     <br>
+   </a>
+  </li>
+  <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Press
+     <br>
+   </a>
+  </li>
+  <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Gallery
+     <br>
+   </a>
+  </li>
+  <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Updates
+     <br>
+   </a>
+  </li>
+  <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Buy Online
+     <br>
+   </a>
+  </li>
+  <li class="star"><img src="C:\wamp\www\suhaav\public\images\star.gif"></li>
+  <li>
+   <a class="menu" href="/menu/" style="text-decoration:none">
+     Contact
+     <br>
+   </a>
+  </li>
+ </ul>
+</div>
+
+</div>
+<div id="slideshow">
+  <img src="C:\wamp\www\suhaav\public\images\boxa.png">
+  <img src="C:\wamp\www\suhaav\public\images\suhaav.jpg" alt="Slideshow Image 1" class="active" />
+  <img src="C:\wamp\www\suhaav\public\images\cake-banner.jpg" alt="Slideshow Image 2" />
+  <img src="C:\wamp\www\suhaav\public\images\pineapple.jpg" alt="Slideshow Image 3" />
+  <img src="C:\wamp\www\suhaav\public\images\cupcake.jpg" alt="Slideshow Image 4" />
+</div>
+
+<div class="box">
+ <img src="C:\wamp\www\suhaav\public\images\box.jpg">
+ <img src="C:\wamp\www\suhaav\public\images\box.jpg">
+ <img src="C:\wamp\www\suhaav\public\images\box.jpg">
+ <img src="C:\wamp\www\suhaav\public\images\box.jpg">
+</div>
+
+
+<!-- this will work with any number of images -->
+<!-- set the active class on whichever image you want to show up as the default 
+(otherwise this will be the last image) -->
+
+
+<div class="box-main">
+ <img src="C:\wamp\www\suhaav\public\images\boxa.png">
+</div>
+
+
+<div class="footer">
+ 
+</div>
+</body>
+</html>
+
