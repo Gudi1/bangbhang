@@ -78,7 +78,7 @@ h2 {
 h1 {
 
 	font-size:31px;
-	color:#EBD90D;
+	color:#E700C8;
 	text-align:center;
 }
 
@@ -97,7 +97,7 @@ td {
 
 ul {
 
-	padding-left:155px;
+	padding-left:53px;
 	margin-top:34px;
 }
 
@@ -113,7 +113,7 @@ ul {
 	
 	background-image:url('/images/web-border.png');
 	height:21px;
-	margin-top:135px;
+	margin-top:139px;
 }
 
 .box-main {
@@ -150,7 +150,7 @@ ul {
 .menu {
 	
 	color:#000000;
-	font-size:14px;
+	font-size:21px;
 }
 
 .header {
@@ -195,17 +195,16 @@ ul {
 	float:right;
 	width:495px;
 	height:191px;
-	margin-right:14px;
-	border:1px solid #EBD90D;
+	margin-right:295px;
+	margin-bottom:20px;
+	border:5px solid #0DECB6;
 	
 }
 
 
 .flyer-info {
 
-	border:1px solid #EBD90D;
-	width:600px;
-	height:843px;
+	/*border:5px solid #0DECB6;*/
 	margin-left:35px;
 
 
@@ -228,7 +227,6 @@ ul {
 .mp3-player a {
 
 	visibility:hidden;
-
 }
 
 .bangbhang img {
