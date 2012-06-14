@@ -1,0 +1,34 @@
+require 'rubygems'
+require 'obbistrano'
+
+# =============================================================================
+# REQUIRED VARIABLES
+# =============================================================================
+# You must always specify the application and repository for every recipe. The
+# repository must be the git URL of the repository you want this recipe to
+# correspond to. The deploy_to path must be the path on each machine that will
+# form the root of the application path.
+
+set :application, "bangbhang"
+role :web,        "bangbhang.oneblackbear.com"
+role :host,       "obb24.oneblackbear.com"
+set :user,        "bangbhang"
+set :password,    "bangbhang0901"
+set :repository,  "git@github.com:Gudi1/bangbhang.git"
+
+
+# =============================================================================
+# OPTIONAL VARIABLES
+# =============================================================================
+set :branch,      "new"
+set :deploy_to,   "."
+set :build_to,    "."
+
+
+# =============================================================================
+# CUSTOM TASKS
+# =============================================================================
+# Define tasks that run on all (or only some) of the machines. You can specify
+# a role (or set of roles) that each task should be executed on. You can also
+# narrow the set of servers to a subset of a role by specifying options, which
+# must match the options given for the servers to select (like :primary => true)
