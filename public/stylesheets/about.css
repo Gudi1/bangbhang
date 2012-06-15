@@ -2,13 +2,14 @@
 
 .welcome {
 	border:5px solid #0DECB6;
-	height:836px;
+	height:520px;
 	width:1072px;
-	margin-bottom:60px;
+	margin-top:110px;
+	margin-bottom:345px;
 	padding-top:20px;
 }
 
 .welcome h1 {
 
-	margin:0 0 0 32px;
+	margin:0 0 0 0px;
 }
