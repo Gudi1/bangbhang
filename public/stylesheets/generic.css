@@ -97,7 +97,7 @@ td {
 
 ul {
 
-	padding-left:53px;
+	padding-left:76px;
 	margin-top:34px;
 }
 
@@ -113,7 +113,7 @@ ul {
 	
 	background-image:url('/images/web-border.png');
 	height:21px;
-	margin-top:38px;
+	margin-top:87px;
 }
 
 .box-main {
@@ -180,7 +180,7 @@ ul {
 
 .page-block {
 
-	width:1184px;
+	width:1000px;
 	margin:auto;
 }
 
@@ -193,7 +193,7 @@ ul {
 .email-capture {
 
 	float:right;
-	width:495px;
+	width:49%;
 	height:191px;
 	margin-right:16px;
 	margin-bottom:20px;
@@ -265,12 +265,6 @@ ul {
 	width:3806px;
 
 
-}
-
-.footer-links ul li {
-
-	float:left;
-	margin:0 22px;
 }
 
 .facebook img {
